@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">AirBnB du pauvre</a>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</nav>
+<div class="container">
+  <h2>Our flats:</h2>
+  <div class="grid-container">
+
+    <% @flats.each do |flat| %>
+      <div class="grid-item">
+        <img class="grid-img-top" src="https://jojo-app.fr/wp-content/uploads/2018/09/espace-optimise-appartement-meuble-paris.jpg" alt="Card image cap">
+          <div class="grid-body">
+            <h5 class="grid-title"><%=flat.name%></h5>
+            <p class="grid-text"><%=flat.address%></p>
+            <p class="grid-text"><i class="fa-solid fa-dollar-sign"></i><%=flat.price_per_night%> <i class="fa-solid fa-people-group"></i><%=flat.number_of_guests%></p>
+          </div>
+          <div class="grid-footer">
+            <small class="text-muted"><%=  link_to 'More info', flat_path(flat) %></small>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
