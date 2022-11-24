@@ -7,7 +7,7 @@
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid grey;
   margin: 60px;
   margin-top: 25px;
   margin-bottom: 30px;
@@ -15,7 +15,6 @@
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
   width: 350px;
-  border-color: grey;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -47,4 +46,29 @@ p {
 .grid-footer {
   font-size: 20px;
   padding-bottom: 10px;
+}
+
+.btn-outline-primary {
+  margin-left: 10px;
+}
+
+.mt-3 {
+  display: block;
+}
+
+.flat-form {
+  background-color: rgb(242, 244, 244);
+  padding: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:400px;
+  margin-top: 30px;
+}
+
+.flat-form h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 10px;
 }
